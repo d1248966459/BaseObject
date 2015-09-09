@@ -8,6 +8,7 @@
 
 #import "BaseObject.h"
 #import <objc/runtime.h>
+#import <objc/objc.h>
 
 #ifdef DEBUG
 #define D_Log(...) NSLog(__VA_ARGS__)
@@ -29,11 +30,20 @@
     self = [super init];
     [dict enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
         obj =[self getNewValueWithNoStringValue:obj key:key];
+        
+       const char * name = object_getClassName(obj);
+        NSLog(@"%s",name);
+        
         if ([obj isKindOfClass:[NSString class]]) {
             [self setValue:obj forKey:key];
         }else{
             [self setValue:obj forUndefinedKey:key];
         }
+//        static dispatch_once_t onceToken;
+//        dispatch_once(&onceToken, ^{
+//            <#code to be executed once#>
+//        });
+        
     }];
     [self.child setUnKonwnValueKeyWithDict:self.unKonwnDict];
     return self;
@@ -56,11 +66,11 @@
     return _unKonwnDict;
 }
 
-@end
+//@end
 
 
-@implementation BaseObject (ParseValue)
-
+//@implementation BaseObject (ParseValue)
+#pragma mark -- 第一次转化
 -(id)getNewValueWithNoStringValue:(id)value key:(NSString *)key{
     if ([value isKindOfClass:[NSString class]]) {
         return value;
@@ -73,7 +83,7 @@
     }
     return value;
 }
-
+#pragma mark -- 判断是否可以转化为字符串
 -(BOOL)canTransformToStringWithValue:(id)value key:(NSString *)key{
     NSString * className = [NSString stringWithUTF8String:object_getClassName(value)];
     if ([className isEqualToString:@"__NSCFBoolean"]) {}
@@ -81,6 +91,7 @@
     else if ([className isEqualToString:@"__NSCFNumber"]){}
     else {
         D_Log(@"key:%@ \n无法转换为string\n value:%@",key,value);
+    
         return NO;
     }
     return YES;

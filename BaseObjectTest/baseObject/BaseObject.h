@@ -23,11 +23,6 @@
 
 @end
 
-@interface BaseObject (ParseValue)
-
--(id)getNewValueWithNoStringValue:(id)value key:(NSString *)key;
-
-@end
 
 @interface BaseObject (CheckIsExistProperty)
 
@@ -46,7 +41,7 @@
 
 @interface BaseObject (PropertyDcitionary)
 /**
- *  获得属性字典
+ *  模型转字典
  *
  *  @return 属性字典
  */

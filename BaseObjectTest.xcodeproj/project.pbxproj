@@ -15,6 +15,7 @@
 		67F468AB1B97359D00091F40 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67F468A91B97359D00091F40 /* LaunchScreen.xib */; };
 		67F468B71B97359D00091F40 /* BaseObjectTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F468B61B97359D00091F40 /* BaseObjectTestTests.m */; };
 		67F468C31B9735FA00091F40 /* BaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F468C21B9735FA00091F40 /* BaseObject.m */; };
+		67F468C71B973C7E00091F40 /* HTTPSRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F468C61B973C7E00091F40 /* HTTPSRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		67F468B61B97359D00091F40 /* BaseObjectTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseObjectTestTests.m; sourceTree = "<group>"; };
 		67F468C11B9735FA00091F40 /* BaseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseObject.h; sourceTree = "<group>"; };
 		67F468C21B9735FA00091F40 /* BaseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseObject.m; sourceTree = "<group>"; };
+		67F468C51B973C7E00091F40 /* HTTPSRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPSRequest.h; sourceTree = "<group>"; };
+		67F468C61B973C7E00091F40 /* HTTPSRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPSRequest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,7 @@
 		67F468991B97359D00091F40 /* BaseObjectTest */ = {
 			isa = PBXGroup;
 			children = (
+				67F468C41B973C4C00091F40 /* nsurl */,
 				67F468C01B9735FA00091F40 /* baseObject */,
 				67F4689E1B97359D00091F40 /* AppDelegate.h */,
 				67F4689F1B97359D00091F40 /* AppDelegate.m */,
@@ -129,6 +133,16 @@
 				67F468C11B9735FA00091F40 /* BaseObject.h */,
 				67F468C21B9735FA00091F40 /* BaseObject.m */,
 			);
+			path = baseObject;
+			sourceTree = "<group>";
+		};
+		67F468C41B973C4C00091F40 /* nsurl */ = {
+			isa = PBXGroup;
+			children = (
+				67F468C51B973C7E00091F40 /* HTTPSRequest.h */,
+				67F468C61B973C7E00091F40 /* HTTPSRequest.m */,
+			);
+			name = nsurl;
 			path = baseObject;
 			sourceTree = "<group>";
 		};
@@ -234,6 +248,7 @@
 			files = (
 				67F468A31B97359D00091F40 /* ViewController.m in Sources */,
 				67F468C31B9735FA00091F40 /* BaseObject.m in Sources */,
+				67F468C71B973C7E00091F40 /* HTTPSRequest.m in Sources */,
 				67F468A01B97359D00091F40 /* AppDelegate.m in Sources */,
 				67F4689D1B97359D00091F40 /* main.m in Sources */,
 			);
@@ -432,6 +447,7 @@
 				67F468BC1B97359D00091F40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		67F468BD1B97359D00091F40 /* Build configuration list for PBXNativeTarget "BaseObjectTestTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +456,7 @@
 				67F468BF1B97359D00091F40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
