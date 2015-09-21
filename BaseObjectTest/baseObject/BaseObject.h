@@ -16,7 +16,9 @@
 
 
 @interface BaseObject : NSObject
-
+/**
+ *
+ */
 @property (nonatomic,weak) BaseObject <SetUknownValueKey> *child;
 
 -(instancetype)initWithDictionary:(NSDictionary *)dict;

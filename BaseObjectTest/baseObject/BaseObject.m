@@ -39,11 +39,6 @@
         }else{
             [self setValue:obj forUndefinedKey:key];
         }
-//        static dispatch_once_t onceToken;
-//        dispatch_once(&onceToken, ^{
-//            <#code to be executed once#>
-//        });
-        
     }];
     [self.child setUnKonwnValueKeyWithDict:self.unKonwnDict];
     return self;
@@ -57,6 +52,10 @@
         D_Log(@"%@属性不存在\n value: %@",key,value);
         [self.unKonwnDict setObject:value forKey:key];
     }
+}
+
+-(void)setValue:(id)value forUndefinedKey:(NSString *)key{
+    [self.unKonwnDict setObject:value forKey:key];
 }
 
 -(NSMutableDictionary *)unKonwnDict{
@@ -132,6 +131,7 @@
         id value = [self valueForKey:propertyName];
         [propertyDcit setObject:value forKey:propertyName];
     }
+   
     return propertyDcit;
 }
 
