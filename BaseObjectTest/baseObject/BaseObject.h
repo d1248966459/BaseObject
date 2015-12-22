@@ -8,23 +8,32 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol SetUknownValueKey <NSObject>
+typedef BOOL (^DJClassesEnumeration)(Class c, BOOL *stop);
 
+static NSSet *foundationClasses_;
+
+
+@protocol SetUknownValueKey <NSObject>
+@optional
 -(void)setUnKonwnValueKeyWithDict:(NSDictionary *)unKonwnDict;
 
 @end
 
 
-@interface BaseObject : NSObject
-/**
- *
- */
-@property (nonatomic,weak) BaseObject <SetUknownValueKey> *child;
+@interface BaseObject : NSObject<SetUknownValueKey>
 
 -(instancetype)initWithDictionary:(NSDictionary *)dict;
 
+
+-(void)objectForKeyValue:(NSDictionary *)dict;
+
 @end
 
+@interface BaseObject (ParseValue)
+
+-(id)getNewValueWithNoStringValue:(id)value key:(NSString *)key;
+
+@end
 
 @interface BaseObject (CheckIsExistProperty)
 
@@ -37,13 +46,13 @@
  *  @return 结果
  */
 
-- (BOOL)checkIsExistPropertyWithSender:(id)sender verifyPropertyName:(NSString *)verifyPropertyName;
+- (BOOL)checkIsExistPropertyWithSender:(BaseObject *)sender verifyPropertyName:(NSString *)verifyPropertyName;
 
 @end
 
 @interface BaseObject (PropertyDcitionary)
 /**
- *  模型转字典
+ *  获得属性字典
  *
  *  @return 属性字典
  */

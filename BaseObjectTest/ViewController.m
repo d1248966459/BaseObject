@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Girl.h"
 
 @interface ViewController ()
 
@@ -16,6 +17,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    Girl * girl = [[Girl alloc] init];
+    girl.age = @"12";
+    girl.name = @"girl";
+    girl.gender = @"girl";
+    NSDictionary * dict = [girl getPropertyDictionary];
+    NSLog(@"%@",dict);
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		678B9AB61C29703B00B3D3B7 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 678B9AB51C29703B00B3D3B7 /* User.m */; };
+		678B9AB91C2970AF00B3D3B7 /* Girl.m in Sources */ = {isa = PBXBuildFile; fileRef = 678B9AB81C2970AF00B3D3B7 /* Girl.m */; };
 		67F4689D1B97359D00091F40 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F4689C1B97359D00091F40 /* main.m */; };
 		67F468A01B97359D00091F40 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F4689F1B97359D00091F40 /* AppDelegate.m */; };
 		67F468A31B97359D00091F40 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F468A21B97359D00091F40 /* ViewController.m */; };
@@ -29,6 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		678B9AB41C29703B00B3D3B7 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		678B9AB51C29703B00B3D3B7 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		678B9AB71C2970AF00B3D3B7 /* Girl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Girl.h; sourceTree = "<group>"; };
+		678B9AB81C2970AF00B3D3B7 /* Girl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Girl.m; sourceTree = "<group>"; };
 		67F468971B97359D00091F40 /* BaseObjectTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseObjectTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67F4689B1B97359D00091F40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67F4689C1B97359D00091F40 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -69,6 +75,8 @@
 		67F4688E1B97359D00091F40 = {
 			isa = PBXGroup;
 			children = (
+				678B9AB71C2970AF00B3D3B7 /* Girl.h */,
+				678B9AB81C2970AF00B3D3B7 /* Girl.m */,
 				67F468991B97359D00091F40 /* BaseObjectTest */,
 				67F468B31B97359D00091F40 /* BaseObjectTestTests */,
 				67F468981B97359D00091F40 /* Products */,
@@ -93,6 +101,8 @@
 				67F4689F1B97359D00091F40 /* AppDelegate.m */,
 				67F468A11B97359D00091F40 /* ViewController.h */,
 				67F468A21B97359D00091F40 /* ViewController.m */,
+				678B9AB41C29703B00B3D3B7 /* User.h */,
+				678B9AB51C29703B00B3D3B7 /* User.m */,
 				67F468A41B97359D00091F40 /* Main.storyboard */,
 				67F468A71B97359D00091F40 /* Images.xcassets */,
 				67F468A91B97359D00091F40 /* LaunchScreen.xib */,
@@ -248,9 +258,11 @@
 			files = (
 				67F468A31B97359D00091F40 /* ViewController.m in Sources */,
 				67F468C31B9735FA00091F40 /* BaseObject.m in Sources */,
+				678B9AB61C29703B00B3D3B7 /* User.m in Sources */,
 				67F468C71B973C7E00091F40 /* HTTPSRequest.m in Sources */,
 				67F468A01B97359D00091F40 /* AppDelegate.m in Sources */,
 				67F4689D1B97359D00091F40 /* main.m in Sources */,
+				678B9AB91C2970AF00B3D3B7 /* Girl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
