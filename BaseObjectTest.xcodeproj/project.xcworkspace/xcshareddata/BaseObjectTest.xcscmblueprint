@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "19A2A8ACF750AF38134C5A822F76754919FC1178",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "19A2A8ACF750AF38134C5A822F76754919FC1178" : 0,
+    "456892FB9FF9B0C5E9480E3CFF2CCAEF9F1AE390" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "04E2B218-8C70-4627-93E8-3F801287A283",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "19A2A8ACF750AF38134C5A822F76754919FC1178" : "BaseObject\/",
+    "456892FB9FF9B0C5E9480E3CFF2CCAEF9F1AE390" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "BaseObjectTest",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "BaseObjectTest.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/d1248966459\/BaseObject.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "19A2A8ACF750AF38134C5A822F76754919FC1178"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/madordie\/KTJPushQueueForNavigation",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "456892FB9FF9B0C5E9480E3CFF2CCAEF9F1AE390"
+    }
+  ]
+}
