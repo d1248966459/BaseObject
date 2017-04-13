@@ -12,7 +12,7 @@
 
 -(void)test{
 
-
+    NSLog(@"");
 }
     
     

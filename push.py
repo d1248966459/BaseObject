@@ -1,5 +1,6 @@
 import os
 os.popen("git add .")
-#msg = input()
-os.popen("git commit 'msg'")
+#print "请输入message:"
+msg = input()
+os.popen("git commit -m msg")
 os.popen("git push")
