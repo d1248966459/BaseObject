@@ -18,6 +18,7 @@
 		67F468B71B97359D00091F40 /* BaseObjectTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F468B61B97359D00091F40 /* BaseObjectTestTests.m */; };
 		67F468C31B9735FA00091F40 /* BaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F468C21B9735FA00091F40 /* BaseObject.m */; };
 		67F468C71B973C7E00091F40 /* HTTPSRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F468C61B973C7E00091F40 /* HTTPSRequest.m */; };
+		CC18CE172137FE5B00B0440C /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC18CE162137FE5B00B0440C /* Student.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		67F468C21B9735FA00091F40 /* BaseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseObject.m; sourceTree = "<group>"; };
 		67F468C51B973C7E00091F40 /* HTTPSRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPSRequest.h; sourceTree = "<group>"; };
 		67F468C61B973C7E00091F40 /* HTTPSRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPSRequest.m; sourceTree = "<group>"; };
+		CC18CE152137FE5A00B0440C /* BaseObjectTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaseObjectTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		CC18CE162137FE5B00B0440C /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,7 @@
 				67F468C01B9735FA00091F40 /* baseObject */,
 				67F4689E1B97359D00091F40 /* AppDelegate.h */,
 				67F4689F1B97359D00091F40 /* AppDelegate.m */,
+				CC18CE162137FE5B00B0440C /* Student.swift */,
 				67F468A11B97359D00091F40 /* ViewController.h */,
 				67F468A21B97359D00091F40 /* ViewController.m */,
 				678B9AB41C29703B00B3D3B7 /* User.h */,
@@ -107,6 +111,7 @@
 				67F468A71B97359D00091F40 /* Images.xcassets */,
 				67F468A91B97359D00091F40 /* LaunchScreen.xib */,
 				67F4689A1B97359D00091F40 /* Supporting Files */,
+				CC18CE152137FE5A00B0440C /* BaseObjectTest-Bridging-Header.h */,
 			);
 			path = BaseObjectTest;
 			sourceTree = "<group>";
@@ -205,6 +210,7 @@
 				TargetAttributes = {
 					67F468961B97359D00091F40 = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0940;
 					};
 					67F468AF1B97359D00091F40 = {
 						CreatedOnToolsVersion = 6.4;
@@ -263,6 +269,7 @@
 				67F468A01B97359D00091F40 /* AppDelegate.m in Sources */,
 				67F4689D1B97359D00091F40 /* main.m in Sources */,
 				678B9AB91C2970AF00B3D3B7 /* Girl.m in Sources */,
+				CC18CE172137FE5B00B0440C /* Student.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,9 +397,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BaseObjectTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BaseObjectTest/BaseObjectTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -400,15 +411,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BaseObjectTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BaseObjectTest/BaseObjectTest-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		67F468BE1B97359D00091F40 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -428,6 +443,7 @@
 		67F468BF1B97359D00091F40 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
